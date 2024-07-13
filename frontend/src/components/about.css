@@ -1,0 +1,180 @@
+body{
+  overflow-x: hidden;
+}
+.about-body{
+    background-color: black;
+    color: white;
+}
+.cardbg{
+    background-color: #dfd8d8;
+}
+.about-container {
+    display: flex;
+    flex-direction: row; /* Default direction */
+    justify-content: center;
+    padding: 20px;
+    /* background-color: lightblue; */
+  }
+.cardbdy{
+    margin-top: 0;
+}
+.login-first{
+  /* background-color: yellow; */
+  width: 40%;
+  height: 100vh;
+}
+.login-input{
+  background-color: transparent; 
+  color: white;
+}
+.login-input:focus{
+  background-color: transparent;
+}
+.login-form{
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  border: 2px solid white;
+  border-radius: 2rem;
+  width: 30rem;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup{
+  width: 40rem;
+  height: 38rem;
+}
+
+.login-parts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.file-input-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.file-input-label {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #262a2f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.file-input-label:hover {
+  background-color: #0056b3;
+}
+
+.file-input {
+  position: absolute;
+  cursor: pointer;
+  visibility: hidden;
+  /* height: 100%;
+  width: 100%; */
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-wrapper:hover{
+  cursor: pointer;
+}
+.user-icon {
+  font-size: 50px; /* Adjust the size as needed */
+  background-color: #3f454b; /* Adjust the background color as needed */
+  color: white;
+  padding: 27px; /* Adjust the padding as needed */
+  border-radius: 50%;
+  width: 100px; /* Ensure the width and height are equal to make it a perfect circle */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.latest{
+  /* background-color:gray; */
+  width:20%;
+  height:60vh;
+  margin-top:10rem;
+  margin-right:2rem;
+  border: 2px solid black;
+  position: sticky;
+  top: 5rem;
+  border-radius:2rem ;
+}
+.latest-list{
+  cursor: pointer;
+  color: blue;
+}
+.blogs-parts{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.temp{
+  left:0
+}
+.welcome-message {
+  margin-bottom: 20rem;
+  font-size: xx-large;
+}
+
+
+
+@media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+    .blogs-parts {
+      flex-direction: column;
+    }
+    .cardbdy{
+        margin-top: 1rem;
+    }
+    .login-parts{
+      flex-direction: column;
+    }
+    .login-form{
+      width: 25rem;
+    }
+    .login-first{
+      height: 10vh;
+    }
+    .temp{
+      left:3rem
+    }
+    .latest{
+      left:3rem;
+      width: 22rem;
+    }
+  }
+  @media (max-width: 470px) {
+    .about-container {
+      flex-direction: column;
+    }
+    .cardbdy{
+        margin-top: 1rem;
+    }
+    .login-parts{
+      flex-direction: column;
+    }.login-first{
+      height: 10vh;
+    }
+    .login-form{
+      width: 18rem;
+    }
+    .latest{
+      left:3rem;
+      width: 18rem;
+    }
+  }

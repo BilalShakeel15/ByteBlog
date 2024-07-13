@@ -1,0 +1,21 @@
+<div className="container" style={{ marginTop: "5rem" }}>
+                <h2>Update your blog here</h2>
+            </div>
+      <div className='container my-5' >
+                <form>
+                    <div className="mb-3">
+                        <label htmlFor="exampleInputEmail1" className="form-label">Title</label>
+                        <input type="text" value={blog.etitle} name='etitle' onChange={handlechange} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+                    </div>
+                    <div class="form-floating">
+                        Description
+                        <label htmlFor="exampleInputEmail1" className="form-label"></label>
+                        <textarea className="form-control" name='edescription' value={blog.edescription} onChange={handlechange} id="floatingTextarea2" style={{ height: "300px" }} required></textarea>
+                    </div>
+                    <div className="mb-3">
+                        <label htmlFor="exampleInputPassword1" className="form-label">Category</label>
+                        <input type="text" value={blog.ecategory} name='ecategory' onChange={handlechange} className="form-control" id="exampleInputPassword1" required />
+                    </div>
+                    <button type="submit" onClick={save} className="btn btn-primary">Update</button>
+                </form>
+            </div>
